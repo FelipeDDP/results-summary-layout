@@ -1,0 +1,185 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 736px;
+    height: 511px;
+    margin-inline: 20px;
+    border-radius: 30px;
+    box-shadow: 10px 35px 50px hsla(234, 85%, 45%, 0.144);
+}
+
+.card .result-box {
+    background-color: var(--light-royal-blue);
+    background-image: var(--result-box-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    width: 368px;
+    padding: 37px 52px 53px;
+}
+
+.card .result-box h2 {
+    color: var(--light-lavender);
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+.card .result-box .score-circle {
+    background: var(--score-circle-gradient);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .result-box .score-circle .score {
+    color: var(--pale-blue);
+    font-weight: 800;
+    font-size: 7rem;
+    padding-top: 10px;
+}
+
+.card .result-box .score-circle .range {
+    color: var(--light-lavender);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.card .result-box .description {
+    text-align: center;
+}
+
+.card .result-box .description .mark {
+    color: var(--pale-blue);
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.card .result-box .description .description-text {
+    color: var(--light-lavender);
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-top: 16px;
+}
+
+.card .summary-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 40px 46px;
+}
+
+.card .summary-box h2 {
+    align-self: flex-start;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--dark-gray-blue);
+}
+
+.card .summary-box .summary {
+    width: 290px;
+    height: 55px;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    padding-inline: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .summary-box .summary .icon {
+    display: flex;
+    align-items: center;
+}
+
+.card .summary-box .summary p{
+    color: var(--dark-gray-blue);
+}
+
+.card .summary-box .summary p span {
+    color: hsla(224, 30%, 27%, 0.747);
+}
+
+.card .summary-box .summary .ability,
+.card .summary-box .summary p {
+    font-weight: 700;
+    font-size: 1.9rem;
+    padding-left: 10px;
+}
+
+.card .summary-box .reaction {
+    background-color: hsla(0, 100%, 67%, 0.075);
+}
+
+.card .summary-box .reaction span {
+    color: var(--light-red);
+}
+
+.card .summary-box .memory {
+    background-color: hsla(39, 100%, 56%, 0.075);
+}
+
+.card .summary-box .memory span {
+    color: var(--orangey-yellow);
+}
+
+.card .summary-box .verbal {
+    background-color: hsla(166, 100%, 37%, 0.075);
+}
+
+.card .summary-box .verbal span {
+    color: var(--green-teal);
+}
+
+.card .summary-box .visual {
+    background-color: hsla(234, 85%, 45%, 0.075);
+}
+
+.card .summary-box .visual span {
+    color: var(--cobalt-blue);
+}
+
+.card .summary-box .btn-continue {
+    background-color: var(--dark-gray-blue);
+    width: 290px;
+    height: 55px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .summary-box .btn-continue a {
+    color: var(--pale-blue);
+    border-radius: 30px;
+    font-size: 1.9rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 55px;
+}
+
+.card .summary-box .btn-continue a:hover {
+    background-image: var(--result-box-gradient);
+}
